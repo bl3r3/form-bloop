@@ -1,0 +1,41 @@
+.footer{
+    background: #030819;
+}
+
+.BotonNext{
+    width: 30%;
+    font-size: 1.3rem;
+    border-radius: 30px;
+    background-color: #29a9e1;
+    border: 1px solid #29a9e1;
+    color: #030819;
+}
+
+.BotonNext:hover{
+    background-color: #29a9e1;
+    color: #030819;
+    transform: scale(1.1);
+    border: 1px solid #29a9e1;
+}
+
+
+.BotonBack{
+    width: 30%;
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 1.3rem;
+}
+
+.BotonBack:hover{
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+.arrow-left{
+    width: 2rem;
+    height: 2rem;
+    color: #29a9e1;
+    margin-top: -3%;
+}

@@ -1,0 +1,25 @@
+.Boton-check{
+    width: 10rem;
+    background-color: #29a9e1;
+    color: #030819;
+    border: none;
+    border-radius: 0;
+    opacity: .7;
+}
+
+.Boton-check:hover{
+    background-color: #29a9e1;
+    color: #030819;
+    transform: scale(1.1);
+}
+
+.icon-check-boton{
+    margin-right: -15px;
+    margin-left: 15px;
+    color: black;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 2px;
+    margin-top: -3px;
+    align-items: end;
+}

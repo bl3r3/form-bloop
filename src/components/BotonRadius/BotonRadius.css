@@ -1,0 +1,17 @@
+
+.Boton-Radius{
+    width: 200px;
+    background-color: #29a9e1;
+    font-size: 1.6rem;
+    color: #030819;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 40px;
+    padding: 2px;
+}
+
+.Boton-Radius:hover{
+    background-color: #29a9e1;
+    color: #030819;
+    transform: scale(1.1);
+}

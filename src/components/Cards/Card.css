@@ -1,0 +1,26 @@
+.card{
+    width: 12rem;
+    height: auto;
+    border: 0;
+    background-color: transparent !important;
+}
+
+.Boton-card{
+    border: 0;
+    border-radius: 40px;
+    width: 90%;
+    background-color: #29a9e1;
+    font-size: 1.5rem;
+    color: #030819;
+    opacity: 0.7;
+}
+
+.Boton-card:hover{
+    background-color: #29a9e1;
+    color: #030819;
+    transform: scale(1.1);
+}
+
+.img-card{
+    border: 3px solid #29a9e1;
+}

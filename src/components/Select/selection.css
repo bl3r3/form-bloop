@@ -1,0 +1,19 @@
+.container-selection{
+    width: 30%;
+}
+
+.selection{
+    border: 3px solid #29a9e1;
+    color: #29a9e1 !important;
+    border-radius: 0;
+    text-align: center;
+}
+
+.selection:focus{
+    border: 3px solid #29a9e1;
+}
+
+.select-custom{
+    background: transparent !important;
+}
+

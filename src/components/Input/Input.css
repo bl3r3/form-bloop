@@ -1,0 +1,16 @@
+.FieldText{
+    width: 50%;
+    border: 3px solid #29a9e1;
+    border-radius: 0; 
+}
+
+.LabelText{
+    color: #29a9e1;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 50%;
+}
+
+.form-control{
+    background-color: transparent !important;
+}
