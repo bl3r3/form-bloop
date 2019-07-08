@@ -8,7 +8,7 @@ import './Card.css';
         render(){
             return (
                 <React.Fragment>
-                   <Card className="card ml-5 mt-5">
+                   <Card className="card mt-5">
                    <img 
                    width="100%" 
                    src="https://carepharmaceuticals.com.au/wp-content/uploads/sites/19/2018/02/placeholder-600x400.png" 

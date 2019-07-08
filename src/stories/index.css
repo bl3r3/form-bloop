@@ -1,0 +1,55 @@
+label{
+    display: block;
+    text-align: left;
+}
+
+input{
+    border: #29a9e1 2px solid !important;
+    color: white !important;
+    border-radius:0 !important; 
+}
+
+select{
+    border: #29a9e1 2px solid !important;
+    color: white !important;
+    border-radius:0 !important; 
+}
+
+.mt{
+    margin-top: 20%;
+}
+
+.mt1{
+    margin-top: 10%;
+}
+
+
+.IntroText{
+    color: white;
+}
+
+.SecundaryText{
+    color: #29a9e1;
+}
+
+.form{
+    width: 50%;
+    text-align: center;
+}
+
+.btn-margin{
+    margin-top: 10%;
+}
+
+.btn-margin-2{
+    margin-top: 5%;
+}
+
+.div-bottom{
+    position: relative;
+}
+.div-bottom{
+    position: absolute;
+    bottom: 10%;
+    width: 95%;
+}

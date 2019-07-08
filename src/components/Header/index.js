@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import './header.css';
+import { IoIosHelpCircle, IoMdListBox } from "react-icons/io";
 
 const Logotipo = require("./Logo-Bloop.png");
 
@@ -23,8 +24,8 @@ export default class HeaderLayuot extends React.Component{
                         className="header2"
                     >
                         <ul>
-                        <a><li>Icon1</li></a>
-                        <a><li>Icon2</li></a>  
+                        <li className="pt-3"><IoIosHelpCircle /></li>
+                        <li><IoMdListBox/></li>  
                         </ul>
                     </Col>
                 </Row>

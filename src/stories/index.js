@@ -1,11 +1,11 @@
 import React from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col, Button, Form, FormGroup, Label, Input, FormText  } from 'reactstrap';
 
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 
-import { Button, Welcome } from '@storybook/react/demo';
+
 import App from "../App"
 import { Button as btn } from 'reactstrap';
 import BotonDisabled from '../components/BotonDisabled';
@@ -17,10 +17,14 @@ import Selection from '../components/Select';
 import HeaderLayout from '../components/Header';
 import FooterLayout from '../components/Footer';
 import Layout from '../components/Layout';
+import InicioComponentes from '../components/InicioComponents'
+import LayoutMain from '../components/LayoutMain';
+
+import './index.css'
 
 
 
-storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
+;
 
 storiesOf('Button', module)
   .add('with text', () => <Button onClick={action('clicked')}>Hello Button</Button>)
@@ -83,15 +87,15 @@ storiesOf('Button', module)
     </div>
   ))
 
-  .add("Layout-home", () =>(
-    <Layout>
+  .add("Layout-inicio", () =>(
+    <InicioComponentes>
       <Container fluid>
-        <Row className="align-items-center">
+        <Row className="align-items-center mt">
           <Col
             md={{ size: 10, offset: 1 }}
           >
-            <h1 className="text-center ">¡Bienvenido a nuestra cotización digital!</h1>
-            <h5 className="text-center">Responder el siguiente cuestionario para poder innovar tu celebracíon</h5>
+            <h1 className="text-center IntroText">¡Bienvenido a nuestra cotización digital!</h1>
+            <h5 className="text-center SecundaryText">Responder el siguiente cuestionario para poder innovar tu celebracíon</h5>
           </Col>
         </Row>
         <Row>
@@ -100,9 +104,497 @@ storiesOf('Button', module)
           </Col>
         </Row>
       </Container>
+    </InicioComponentes>
+  ))
+
+  .add("Layout-infog", () =>(
+    <Layout>
+      <Container fluid>
+        <Row className="align-items-center">
+          <Col className="text-center">
+            <h1 className="text-center IntroText">Información General</h1>
+            <h4 className="text-center SecundaryText">Cuentanos un poco mas sobre tu evento</h4>
+          </Col>
+        </Row>
+        <Row>
+          <Col md={{ size: 8, offset: 4 }}>
+          <Form>
+              <FormGroup className="form">
+                <Label className="IntroText mt-3">Tipo de evento</Label>
+                <Input type="select" name="select" id="exampleSelect">
+                  <option></option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </Input>
+                <Label className="mt-3 IntroText">Fecha</Label>
+                <Input></Input>
+                <Label className="mt-3 IntroText">cantidad de invitados</Label>
+                <Input type="select" name="select" id="exampleSelect">
+                  <option></option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </Input>
+                <Label className="mt-3 IntroText">Horario (Opciona)</Label>
+                  <Row>
+                    <Col md="6">
+                      <Input placeholder="Inicio" ></Input>
+                    </Col>
+                    <Col>
+                      <Input placeholder="Fin"></Input>
+                    </Col>
+                  </Row>
+                <Label className="mt-3 IntroText">locación</Label>
+                <Input></Input>
+              </FormGroup>
+            </Form>
+          </Col>
+        </Row>
+      </Container>
     </Layout>
   ))
 
+  .add("Layout-2", () =>(
+    <Layout>
+      <Container fluid>
+      <Row className="align-items-center">
+          <Col className="text-center">
+            <h1 className="text-center IntroText">Información General</h1>
+            <h4 className="text-center SecundaryText">Cuentanos un poco mas sobre tu evento</h4>
+          </Col>
+        </Row>
+        <Row className="align-items-center mt1">
+          <Col md={{ size: 10, offset: 2 }}>
+            <BotonDisabled title="Display" />
+            <BotonDisabled title="Talentos"/>
+            <BotonDisabled title="COCTELERIA"/>
+            <BotonDisabled title="MOBILIARIO"/>
+          </Col>
+        </Row>
+        <Row className="align-items-center">
+          <Col md={{ size: 10, offset: 2 }}>
+            <BotonDisabled title="FOTOS" />
+            <BotonDisabled title="VIDEOS"/>
+            <BotonDisabled title="LICOR"/>
+            <BotonDisabled title="SEGURIDAD"/>
+          </Col>
+        </Row>
+        <Row className="align-items-center">
+          <Col md={{ size: 10, offset: 2 }}>
+            <BotonDisabled title="CATERING" />
+            <BotonDisabled title="POSTRES"/>
+            <BotonDisabled title="COTILLÓN"/>
+            <BotonDisabled title="TOLDOS"/>
+          </Col>
+        </Row>
+      </Container>
+    </Layout>
+  ))
+
+  .add("Layout-3", () =>(
+    <LayoutMain>
+      <Container fluid>
+        <Row>
+          <Col className="text-center" md="12">
+          <h3 className="SecundaryText">Selecciona la opción de Display que más te guste</h3>
+          </Col>
+          <Col className="text-center" md="12">
+          <h4 className="SecundaryText">Selecciona la opción de Display que más te guste</h4>
+          </Col>
+        </Row>
+        <Row>
+          <Col md={{size: 2, offset: 2}}>
+            <Tarjeta option="Opcion 1"/>
+          </Col>
+          <Col md="2">
+            <Tarjeta option="Opcion 2"/>
+          </Col>
+          <Col md="2">
+            <Tarjeta option="Opcion 3"/>
+          </Col>
+          <Col md="2">
+            <Tarjeta option="Opcion 4"/>
+          </Col>
+        </Row>
+        <Row>
+          <Col md={{size: 2, offset: 2}}>
+            <Tarjeta option="Opcion 5"/>
+          </Col>
+          <Col md="2">
+            <Tarjeta option="Opcion 6"/>
+          </Col>
+          <Col md="2">
+            <Tarjeta option="Opcion 7"/>
+          </Col>
+          <Col md="2">
+            <Tarjeta option="Opcion 8"/>
+          </Col>
+        </Row>
+        <Row>
+          <Col className="text-center mt-5 IntroText">
+            <p>Todas las opciones cuentan con un DJ por 8 horas continuas**</p>
+          </Col>
+        </Row>
+      </Container>
+    </LayoutMain>
+  ))
+  
+  .add("Layout-4", () =>(
+    <LayoutMain>
+      <Container fluid>
+        <Row>
+          <Col className="text-center" md="12">
+          <h3 className="SecundaryText">¿Qué típo de talento estas buscando? </h3>
+          </Col>
+        </Row>
+        <Row className="btn-margin">
+          <Col md="12" className="text-center">
+            <BotonDisabled title="BIenvenida"/>
+          </Col>
+          <Col md="12" className="text-center">
+          <BotonDisabled title="Artistas o Bandas"/>
+          </Col>
+          <Col md="12" className="text-center">
+          <BotonDisabled title="Djs"/>
+          </Col>
+          <Col md="12" className="text-center">
+          <BotonDisabled title="Bandas de Covers"/>
+          </Col>
+        </Row>
+      </Container>
+    </LayoutMain>
+  ))
+
+  .add("Layout-5", () =>(
+    <LayoutMain>
+      <Container fluid>
+        <Row>
+          <Col className="text-center" md="12">
+          <h3 className="IntroText">BIenvenida</h3>
+          </Col>
+          <Col>
+         <h5 className="mt-5 text-center SecundaryText">Selecciona los talentos de bienvenida que desees</h5>
+          </Col>
+        </Row>
+        <Row className="btn-margin-2">
+          <Col md="12" className="text-center">
+            <BotonDisabled title="Saxofonista "/>
+          </Col>
+          <Col md="12" className="text-center">
+          <BotonDisabled title="violinista"/>
+          </Col>
+          <Col md="12" className="text-center">
+          <BotonDisabled title="banda de jazz"/>
+          </Col>
+          <Col md="12" className="text-center">
+          <BotonDisabled title="big band"/>
+          </Col>
+        </Row>
+      </Container>
+    </LayoutMain>
+  ))
+  
+  .add("Layout-6", () =>(
+    <LayoutMain>
+      <Container fluid>
+        <Row>
+          <Col className="text-center" md="12">
+          <h3 className="IntroText">artistas o bandas</h3>
+          </Col>
+          <Col>
+         <h5 className="mt-5 text-center SecundaryText">Selecciona que tipo de artistas o bandas te gustaría</h5>
+          </Col>
+        </Row>
+        <Row className="btn-margin-2">
+          <Col md="12" className="text-center">
+            <BotonDisabled title="Por definir"/>
+          </Col>
+          <Col md="12" className="text-center">
+          <BotonDisabled title="Por definir"/>
+          </Col>
+          <Col md="12" className="text-center">
+          <BotonDisabled title="Por definir"/>
+          </Col>
+          <Col md="12" className="text-center">
+          <BotonDisabled title="Por definir"/>
+          </Col>
+        </Row>
+      </Container>
+    </LayoutMain>
+  ))
+
+  .add("Layout-7", () =>(
+    <LayoutMain>
+      <Container fluid>
+        <Row>
+          <Col className="text-center" md="12">
+          <h3 className="IntroText">dj</h3>
+          </Col>
+          <Col>
+         <h5 className="mt-5 text-center SecundaryText">Selecciona que tipo de DJ te gustaría para tu evento</h5>
+          </Col>
+        </Row>
+        <Row className="btn-margin-2">
+          <Col md="12" className="text-center">
+            <BotonDisabled title="Britsio"/>
+          </Col>
+          <Col md="12" className="text-center">
+          <BotonDisabled title="marco allen"/>
+          </Col>
+          <Col md="12" className="text-center">
+          <BotonDisabled title="maskara"/>
+          </Col>
+          <Col md="12" className="text-center">
+          <BotonDisabled title="joss"/>
+          </Col>
+        </Row>
+      </Container>
+    </LayoutMain>
+  ))
+
+  .add("Layout-8", () =>(
+    <LayoutMain>
+      <Container fluid>
+        <Row>
+          <Col className="text-center" md="12">
+          <h3 className="IntroText">banda de cover</h3>
+          </Col>
+          <Col>
+         <h5 className="mt-5 text-center SecundaryText">Selecciona el tipo de Banda de Covers que te gustaría</h5>
+          </Col>
+        </Row>
+        <Row className="btn-margin-2">
+          <Col md="12" className="text-center">
+            <BotonDisabled title="Por definir"/>
+          </Col>
+          <Col md="12" className="text-center">
+          <BotonDisabled title="Por definir"/>
+          </Col>
+          <Col md="12" className="text-center">
+          <BotonDisabled title="Por definir"/>
+          </Col>
+          <Col md="12" className="text-center">
+          <BotonDisabled title="Por definir"/>
+          </Col>
+        </Row>
+      </Container>
+    </LayoutMain>
+  ))
+  
+
+  .add("Layout-9", () =>(
+    <LayoutMain>
+      <Container fluid>
+        <Row>
+          <Col className="text-center" md="12">
+          <h3 className="SecundaryText">¿De qué estilo te imaginas tu escenario ideal?</h3>
+          </Col>
+        </Row>
+        <Row className="btn-margin">
+          <Col md="12" className="text-center">
+          <BotonRadius title="Clásico" />
+          </Col>
+          <Col md="12" className="text-center">
+          <BotonRadius title="Intermedio"/>
+          </Col>
+          <Col md="12" className="text-center">
+          <BotonRadius title="moderno"/>
+          </Col>
+        </Row>
+        <div className="div-bottom">
+        <Row className="row-bottom">
+          <Col>
+            <h5 className="IntroText text-center">¡Importante! el estilo no incide el precio del escenario, solo en el estilo que se esta buscando diseñar.</h5>
+          </Col>
+        </Row>
+        </div>
+      </Container>
+    </LayoutMain>
+  ))
+
+  .add("Layout-10", () =>(
+    <LayoutMain>
+      <Container fluid>
+        <Row>
+          <Col className="text-center" md="12">
+          <h3 className="SecundaryText">¿Cuales son tus elementos favoritos dentro de un escenario?</h3>
+          </Col>
+          <Col md="12">
+            <h5 className="SecundaryText text-center">Selecciona tus categorias favoritas</h5>
+          </Col>
+        </Row>
+        <Row className="btn-margin">
+          <Col md={{size: 2, offset: 3}}>
+            <BotonDisabled title="Pantallas" />
+          </Col>
+          <Col md="2">
+          <BotonDisabled title="efectos"/>
+          </Col>
+          <Col md="2">
+          <BotonDisabled title="escenografia"/>
+          </Col>
+        </Row>
+        <Row>
+        <Col md={{size: 2, offset: 3}}>
+            <BotonDisabled title="Barras Led"/>
+          </Col>
+          <Col md="2">
+          <BotonDisabled title="tarima"/>
+          </Col>
+          <Col md="2">
+          <BotonDisabled title="decoración"/>
+          </Col>
+        </Row>
+        <Row>
+        <Col md={{size: 2, offset: 3}}>
+            <BotonDisabled title="laser"/>
+          </Col>
+          <Col md="2">
+          <BotonDisabled title="sonido"/>
+          </Col>
+          <Col md="2">
+          <BotonDisabled title="iluminación"/>
+          </Col>
+        </Row>
+      </Container>
+    </LayoutMain>
+  ))
+
+  .add("Layout-11", () =>(
+    <LayoutMain>
+      <Container fluid>
+        <Row>
+          <Col className="text-center" md="12">
+          <h3 className="IntroText">talento</h3>
+          </Col>
+          <Col md="12">
+            <h5 className="SecundaryText text-center">¿Ya tienes un talento confirmado?</h5>
+          </Col>
+        </Row>
+        <Row className="btn-margin">
+            <Col md="12" className="text-center">
+              <BotonRadius title="SI"/>
+            </Col>
+            <Col md="12" className="text-center">
+            <BotonRadius title="NO"/>
+            </Col>
+        </Row>
+        <Row>
+          <Col md={{size: 5, offset:4}} className="text-center">
+            <FieldText/>
+          </Col>
+        </Row>
+          
+      </Container>
+    </LayoutMain>
+  ))
+
+  .add("Layout-12", () =>(
+    <LayoutMain>
+      <Container fluid>
+        <Row>
+          <Col className="text-center" md="12">
+          <h3 className="SecundaryText">¿Cuales son tus elementos favoritos dentro de un escenario?</h3>
+          </Col>
+          <Col md="12">
+            <h5 className="SecundaryText text-center">Selecciona tus categorias favoritas</h5>
+          </Col>
+        </Row>
+        <Row className="btn-margin">
+          <Col md={{size: 2, offset: 3}}>
+            <BotonDisabled title="Pantallas" />
+          </Col>
+          <Col md="2">
+          <BotonDisabled title="efectos"/>
+          </Col>
+          <Col md="2">
+          <BotonDisabled title="escenografia"/>
+          </Col>
+        </Row>
+        <Row>
+        <Col md={{size: 2, offset: 3}}>
+            <BotonDisabled title="Barras Led"/>
+          </Col>
+          <Col md="2">
+          <BotonDisabled title="tarima"/>
+          </Col>
+          <Col md="2">
+          <BotonDisabled title="decoración"/>
+          </Col>
+        </Row>
+        <Row>
+        <Col md={{size: 2, offset: 3}}>
+            <BotonDisabled title="laser"/>
+          </Col>
+          <Col md="2">
+          <BotonDisabled title="sonido"/>
+          </Col>
+          <Col md="2">
+          <BotonDisabled title="iluminación"/>
+          </Col>
+        </Row>
+      </Container>
+    </LayoutMain>
+  ))
+
+  .add("Layout-13", () =>(
+    <LayoutMain>
+      <Container fluid>
+        <Row>
+          <Col className="text-center" md="12">
+          <h2 className="IntroText">efectos</h2>
+          </Col>
+          <Col md="12">
+            <h4 className="SecundaryText text-center">¿Con qué efectos te gustaría contar? </h4>
+          </Col>
+        </Row>
+        <Row className="btn-margin">
+          <Col md={{size: 2, offset: 3}}>
+            <BotonDisabled title="co2" />
+          </Col>
+          <Col md="2">
+          <BotonDisabled title="fuego frio"/>
+          </Col>
+          <Col md="2">
+          <BotonDisabled title="humo bajo"/>
+          </Col>
+        </Row>
+        <Row>
+        <Col md={{size: 2, offset: 3}}>
+            <BotonDisabled title="pistola de co2"/>
+          </Col>
+          <Col md="2">
+          <BotonDisabled title="confetti"/>
+          </Col>
+          <Col md="2">
+          <BotonDisabled title="minas"/>
+          </Col>
+        </Row>
+        <Row>
+        <Col md={{size: 2, offset: 3}}>
+            <BotonDisabled title="pistola de co2 led"/>
+          </Col>
+          <Col md="2">
+          <BotonDisabled title="lanza llamas"/>
+          </Col>
+          <Col md="2">
+          <BotonDisabled title="serpentina"/>
+          </Col>
+        </Row>
+        <div className="div-bottom">
+        <Row className="row-bottom-2">
+          <Col>
+            <h5 className="IntroText text-center">Saltar</h5>
+          </Col>
+        </Row>
+        </div>
+          
+      </Container>
+    </LayoutMain>
+  ))
 
 
 

@@ -8,7 +8,7 @@ export default class BotonDisable extends React.Component {
         return (
             <React.Fragment>
                 <Button 
-                    className="Boton-Disable mb-2"
+                    className="Boton-Disable mr-2 mt-2"
                 >{this.props.title}</Button>
             </React.Fragment>
         )

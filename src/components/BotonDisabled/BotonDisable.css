@@ -1,12 +1,12 @@
 body{
-    background-color: black;
+    background-color: #030819;
     font-family: arial;
 }
 
 .Boton-Disable{
-    width: 170px;
+    width: 200px;
     background-color: #29a9e1;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #030819;
     text-transform: uppercase;
     border: none;
@@ -19,5 +19,6 @@ body{
 .Boton-Disable:hover{
     background-color: #29a9e1;
     color: #030819;
-    transform: scale(1.1)
+    transform: scale(1.1);
+    opacity: 1;
 }

@@ -8,7 +8,7 @@ export default class BotonRadius extends React.Component{
         return (
             <React.Fragment>
                 <Button
-                    className="Boton-Radius mt-5 ml-5"
+                    className="Boton-Radius mt-3"
                 >
                     {this.props.title}
                 </Button>

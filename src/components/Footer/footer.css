@@ -1,3 +1,12 @@
+@font-face {
+    font-family: Bebas;
+    src: url(../fonts/bebas.ttf);
+  }
+
+body{
+    font-family: Bebas;
+}
+
 .footer {
   position: fixed;
   bottom: 0;
