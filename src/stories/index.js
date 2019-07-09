@@ -19,6 +19,7 @@ import FooterLayout from '../components/Footer';
 import Layout from '../components/Layout';
 import InicioComponentes from '../components/InicioComponents'
 import LayoutMain from '../components/LayoutMain';
+import LoadImg from '../components/LoadImg';
 
 import './index.css'
 
@@ -247,7 +248,7 @@ storiesOf('Button', module)
       <Container fluid>
         <Row>
           <Col className="text-center" md="12">
-          <h3 className="SecundaryText">¿Qué típo de talento estas buscando? </h3>
+            <h3 className="SecundaryText">¿Qué típo de talento estas buscando? </h3>
           </Col>
         </Row>
         <Row className="btn-margin">
@@ -255,13 +256,13 @@ storiesOf('Button', module)
             <BotonDisabled title="BIenvenida"/>
           </Col>
           <Col md="12" className="text-center">
-          <BotonDisabled title="Artistas o Bandas"/>
+            <BotonDisabled title="Artistas o Bandas"/>
           </Col>
           <Col md="12" className="text-center">
-          <BotonDisabled title="Djs"/>
+            <BotonDisabled title="Djs"/>
           </Col>
           <Col md="12" className="text-center">
-          <BotonDisabled title="Bandas de Covers"/>
+            <BotonDisabled title="Bandas de Covers"/>
           </Col>
         </Row>
       </Container>
@@ -273,10 +274,10 @@ storiesOf('Button', module)
       <Container fluid>
         <Row>
           <Col className="text-center" md="12">
-          <h3 className="IntroText">BIenvenida</h3>
+            <h3 className="IntroText">BIenvenida</h3>
           </Col>
           <Col>
-         <h5 className="mt-5 text-center SecundaryText">Selecciona los talentos de bienvenida que desees</h5>
+            <h5 className="mt-5 text-center SecundaryText">Selecciona los talentos de bienvenida que desees</h5>
           </Col>
         </Row>
         <Row className="btn-margin-2">
@@ -284,13 +285,13 @@ storiesOf('Button', module)
             <BotonDisabled title="Saxofonista "/>
           </Col>
           <Col md="12" className="text-center">
-          <BotonDisabled title="violinista"/>
+            <BotonDisabled title="violinista"/>
           </Col>
           <Col md="12" className="text-center">
-          <BotonDisabled title="banda de jazz"/>
+            <BotonDisabled title="banda de jazz"/>
           </Col>
           <Col md="12" className="text-center">
-          <BotonDisabled title="big band"/>
+            <BotonDisabled title="big band"/>
           </Col>
         </Row>
       </Container>
@@ -302,10 +303,10 @@ storiesOf('Button', module)
       <Container fluid>
         <Row>
           <Col className="text-center" md="12">
-          <h3 className="IntroText">artistas o bandas</h3>
+            <h3 className="IntroText">artistas o bandas</h3>
           </Col>
           <Col>
-         <h5 className="mt-5 text-center SecundaryText">Selecciona que tipo de artistas o bandas te gustaría</h5>
+            <h5 className="mt-5 text-center SecundaryText">Selecciona que tipo de artistas o bandas te gustaría</h5>
           </Col>
         </Row>
         <Row className="btn-margin-2">
@@ -313,13 +314,13 @@ storiesOf('Button', module)
             <BotonDisabled title="Por definir"/>
           </Col>
           <Col md="12" className="text-center">
-          <BotonDisabled title="Por definir"/>
+            <BotonDisabled title="Por definir"/>
           </Col>
           <Col md="12" className="text-center">
-          <BotonDisabled title="Por definir"/>
+            <BotonDisabled title="Por definir"/>
           </Col>
           <Col md="12" className="text-center">
-          <BotonDisabled title="Por definir"/>
+            <BotonDisabled title="Por definir"/>
           </Col>
         </Row>
       </Container>
@@ -331,10 +332,10 @@ storiesOf('Button', module)
       <Container fluid>
         <Row>
           <Col className="text-center" md="12">
-          <h3 className="IntroText">dj</h3>
+            <h3 className="IntroText">dj</h3>
           </Col>
           <Col>
-         <h5 className="mt-5 text-center SecundaryText">Selecciona que tipo de DJ te gustaría para tu evento</h5>
+            <h5 className="mt-5 text-center SecundaryText">Selecciona que tipo de DJ te gustaría para tu evento</h5>
           </Col>
         </Row>
         <Row className="btn-margin-2">
@@ -342,13 +343,13 @@ storiesOf('Button', module)
             <BotonDisabled title="Britsio"/>
           </Col>
           <Col md="12" className="text-center">
-          <BotonDisabled title="marco allen"/>
+            <BotonDisabled title="marco allen"/>
           </Col>
           <Col md="12" className="text-center">
-          <BotonDisabled title="maskara"/>
+            <BotonDisabled title="maskara"/>
           </Col>
           <Col md="12" className="text-center">
-          <BotonDisabled title="joss"/>
+            <BotonDisabled title="joss"/>
           </Col>
         </Row>
       </Container>
@@ -360,10 +361,10 @@ storiesOf('Button', module)
       <Container fluid>
         <Row>
           <Col className="text-center" md="12">
-          <h3 className="IntroText">banda de cover</h3>
+            <h3 className="IntroText">banda de cover</h3>
           </Col>
           <Col>
-         <h5 className="mt-5 text-center SecundaryText">Selecciona el tipo de Banda de Covers que te gustaría</h5>
+            <h5 className="mt-5 text-center SecundaryText">Selecciona el tipo de Banda de Covers que te gustaría</h5>
           </Col>
         </Row>
         <Row className="btn-margin-2">
@@ -371,13 +372,13 @@ storiesOf('Button', module)
             <BotonDisabled title="Por definir"/>
           </Col>
           <Col md="12" className="text-center">
-          <BotonDisabled title="Por definir"/>
+            <BotonDisabled title="Por definir"/>
           </Col>
           <Col md="12" className="text-center">
-          <BotonDisabled title="Por definir"/>
+            <BotonDisabled title="Por definir"/>
           </Col>
           <Col md="12" className="text-center">
-          <BotonDisabled title="Por definir"/>
+            <BotonDisabled title="Por definir"/>
           </Col>
         </Row>
       </Container>
@@ -390,18 +391,18 @@ storiesOf('Button', module)
       <Container fluid>
         <Row>
           <Col className="text-center" md="12">
-          <h3 className="SecundaryText">¿De qué estilo te imaginas tu escenario ideal?</h3>
+            <h3 className="SecundaryText">¿De qué estilo te imaginas tu escenario ideal?</h3>
           </Col>
         </Row>
         <Row className="btn-margin">
           <Col md="12" className="text-center">
-          <BotonRadius title="Clásico" />
+            <BotonRadius title="Clásico" />
           </Col>
           <Col md="12" className="text-center">
-          <BotonRadius title="Intermedio"/>
+            <BotonRadius title="Intermedio"/>
           </Col>
           <Col md="12" className="text-center">
-          <BotonRadius title="moderno"/>
+            <BotonRadius title="moderno"/>
           </Col>
         </Row>
         <div className="div-bottom">
@@ -420,7 +421,7 @@ storiesOf('Button', module)
       <Container fluid>
         <Row>
           <Col className="text-center" md="12">
-          <h3 className="SecundaryText">¿Cuales son tus elementos favoritos dentro de un escenario?</h3>
+            <h3 className="SecundaryText">¿Cuales son tus elementos favoritos dentro de un escenario?</h3>
           </Col>
           <Col md="12">
             <h5 className="SecundaryText text-center">Selecciona tus categorias favoritas</h5>
@@ -431,10 +432,10 @@ storiesOf('Button', module)
             <BotonDisabled title="Pantallas" />
           </Col>
           <Col md="2">
-          <BotonDisabled title="efectos"/>
+            <BotonDisabled title="efectos"/>
           </Col>
           <Col md="2">
-          <BotonDisabled title="escenografia"/>
+            <BotonDisabled title="escenografia"/>
           </Col>
         </Row>
         <Row>
@@ -442,10 +443,10 @@ storiesOf('Button', module)
             <BotonDisabled title="Barras Led"/>
           </Col>
           <Col md="2">
-          <BotonDisabled title="tarima"/>
+            <BotonDisabled title="tarima"/>
           </Col>
           <Col md="2">
-          <BotonDisabled title="decoración"/>
+            <BotonDisabled title="decoración"/>
           </Col>
         </Row>
         <Row>
@@ -453,10 +454,10 @@ storiesOf('Button', module)
             <BotonDisabled title="laser"/>
           </Col>
           <Col md="2">
-          <BotonDisabled title="sonido"/>
+            <BotonDisabled title="sonido"/>
           </Col>
           <Col md="2">
-          <BotonDisabled title="iluminación"/>
+            <BotonDisabled title="iluminación"/>
           </Col>
         </Row>
       </Container>
@@ -468,7 +469,7 @@ storiesOf('Button', module)
       <Container fluid>
         <Row>
           <Col className="text-center" md="12">
-          <h3 className="IntroText">talento</h3>
+            <h3 className="IntroText">talento</h3>
           </Col>
           <Col md="12">
             <h5 className="SecundaryText text-center">¿Ya tienes un talento confirmado?</h5>
@@ -479,7 +480,7 @@ storiesOf('Button', module)
               <BotonRadius title="SI"/>
             </Col>
             <Col md="12" className="text-center">
-            <BotonRadius title="NO"/>
+              <BotonRadius title="NO"/>
             </Col>
         </Row>
         <Row>
@@ -497,7 +498,7 @@ storiesOf('Button', module)
       <Container fluid>
         <Row>
           <Col className="text-center" md="12">
-          <h3 className="SecundaryText">¿Cuales son tus elementos favoritos dentro de un escenario?</h3>
+            <h3 className="SecundaryText">¿Cuales son tus elementos favoritos dentro de un escenario?</h3>
           </Col>
           <Col md="12">
             <h5 className="SecundaryText text-center">Selecciona tus categorias favoritas</h5>
@@ -508,10 +509,10 @@ storiesOf('Button', module)
             <BotonDisabled title="Pantallas" />
           </Col>
           <Col md="2">
-          <BotonDisabled title="efectos"/>
+            <BotonDisabled title="efectos"/>
           </Col>
           <Col md="2">
-          <BotonDisabled title="escenografia"/>
+            <BotonDisabled title="escenografia"/>
           </Col>
         </Row>
         <Row>
@@ -519,10 +520,10 @@ storiesOf('Button', module)
             <BotonDisabled title="Barras Led"/>
           </Col>
           <Col md="2">
-          <BotonDisabled title="tarima"/>
+            <BotonDisabled title="tarima"/>
           </Col>
           <Col md="2">
-          <BotonDisabled title="decoración"/>
+            <BotonDisabled title="decoración"/>
           </Col>
         </Row>
         <Row>
@@ -530,10 +531,10 @@ storiesOf('Button', module)
             <BotonDisabled title="laser"/>
           </Col>
           <Col md="2">
-          <BotonDisabled title="sonido"/>
+            <BotonDisabled title="sonido"/>
           </Col>
           <Col md="2">
-          <BotonDisabled title="iluminación"/>
+            <BotonDisabled title="iluminación"/>
           </Col>
         </Row>
       </Container>
@@ -545,7 +546,7 @@ storiesOf('Button', module)
       <Container fluid>
         <Row>
           <Col className="text-center" md="12">
-          <h2 className="IntroText">efectos</h2>
+            <h2 className="IntroText">efectos</h2>
           </Col>
           <Col md="12">
             <h4 className="SecundaryText text-center">¿Con qué efectos te gustaría contar? </h4>
@@ -556,10 +557,10 @@ storiesOf('Button', module)
             <BotonDisabled title="co2" />
           </Col>
           <Col md="2">
-          <BotonDisabled title="fuego frio"/>
+            <BotonDisabled title="fuego frio"/>
           </Col>
           <Col md="2">
-          <BotonDisabled title="humo bajo"/>
+            <BotonDisabled title="humo bajo"/>
           </Col>
         </Row>
         <Row>
@@ -567,10 +568,10 @@ storiesOf('Button', module)
             <BotonDisabled title="pistola de co2"/>
           </Col>
           <Col md="2">
-          <BotonDisabled title="confetti"/>
+            <BotonDisabled title="confetti"/>
           </Col>
           <Col md="2">
-          <BotonDisabled title="minas"/>
+            <BotonDisabled title="minas"/>
           </Col>
         </Row>
         <Row>
@@ -578,10 +579,10 @@ storiesOf('Button', module)
             <BotonDisabled title="pistola de co2 led"/>
           </Col>
           <Col md="2">
-          <BotonDisabled title="lanza llamas"/>
+           <BotonDisabled title="lanza llamas"/>
           </Col>
           <Col md="2">
-          <BotonDisabled title="serpentina"/>
+            <BotonDisabled title="serpentina"/>
           </Col>
         </Row>
         <div className="div-bottom">
@@ -596,6 +597,353 @@ storiesOf('Button', module)
     </LayoutMain>
   ))
 
+  .add("Layout-14", () =>(
+    <LayoutMain>
+      <Container fluid>
+        <Row>
+          <Col className="text-center" md="12">
+            <h2 className="IntroText">¿Tienes alguna observación o referencia adicional?</h2>
+          </Col>
+          <Col md="12">
+            <h4 className="SecundaryText text-center">Deja un comentario o adjunta una foto a continuación</h4>
+          </Col>
+        </Row>
+        <Row className="btn-margin-2">
+          <Col md={{size: 2, offset: 1}}>
+            <LoadImg/>
+          </Col>
+          <Col md="2">
+            <LoadImg/>
+          </Col>
+          <Col md="2">
+            <LoadImg/>
+          </Col>
+          <Col md="2">
+            <LoadImg/>
+          </Col>
+          <Col md="2">
+            <LoadImg/>
+          </Col>
+        </Row>
+        <div className="div-bottom">
+        <Row className="row-bottom-2">
+          <Col>
+            <h5 className="IntroText text-center">Saltar</h5>
+          </Col>
+        </Row>
+        </div>
+      </Container>
+    </LayoutMain>
+  ))
 
+  .add("Layout-15", () =>(
+    <LayoutMain>
+      <Container fluid>
+        <Row>
+          <Col className="text-center" md="12">
+            <h2 className="SecundaryText">¿Qué tipo de estilo fotográfico estás buscando</h2>
+          </Col>
+          <Col md="12">
+            <h4 className="SecundaryText text-center"> Selecciona tus categorias favoritas </h4>
+          </Col>
+        </Row>
+
+        <Row className="align-items-center mt1">
+          <Col md={{ size: 10, offset: 2 }}>
+            <BotonDisabled title="social" />
+            <BotonDisabled title="moda"/>
+            <BotonDisabled title="periodistico"/>
+            <BotonDisabled title="branding"/>
+          </Col>
+        </Row>
+        <Row className="align-items-center">
+          <Col md={{ size: 10, offset: 2 }}>
+            <BotonDisabled title="artistico" />
+            <BotonDisabled title="comercial"/>
+            <BotonDisabled title="aereo"/>
+            <BotonDisabled title="nocturno"/>
+          </Col>
+        </Row>
+        <Row className="align-items-center">
+          <Col md={{ size: 10, offset: 2 }}>
+            <BotonDisabled title="documental" />
+            <BotonDisabled title="publicitario"/>
+            <BotonDisabled title="retrato"/>
+            <BotonDisabled title="redes sociales
+"/>
+          </Col>
+        </Row>
+      </Container>
+    </LayoutMain>
+  ))
+
+  .add("Layout-16", () =>(
+    <LayoutMain>
+      <Container fluid>
+        <Row>
+          <Col className="text-center" md="12">
+            <h2 className="IntroText">¿Tienes alguna observación o referencia adicional?</h2>
+          </Col>
+          <Col md="12">
+            <h4 className="SecundaryText text-center">Deja un comentario o adjunta una foto a continuación</h4>
+          </Col>
+        </Row>
+        <Row className="btn-margin-2">
+          <Col md={{size: 2, offset: 1}}>
+            <LoadImg/>
+          </Col>
+          <Col md="2">
+            <LoadImg/>
+          </Col>
+          <Col md="2">
+            <LoadImg/>
+          </Col>
+          <Col md="2">
+            <LoadImg/>
+          </Col>
+          <Col md="2">
+            <LoadImg/>
+          </Col>
+        </Row>
+        <div className="div-bottom">
+        <Row className="row-bottom-2">
+          <Col>
+            <h5 className="IntroText text-center">Saltar</h5>
+          </Col>
+        </Row>
+        </div>
+      </Container>
+    </LayoutMain>
+  ))
+  
+  .add("Layout-17", () =>(
+    <LayoutMain>
+      <Container fluid>
+        <Row>
+          <Col className="text-center" md="12">
+            <h2 className="SecundaryText">¿Qué tipo de estilo video estás buscando</h2>
+          </Col>
+          <Col md="12">
+            <h4 className="SecundaryText text-center"> Selecciona tus categorias favoritas </h4>
+          </Col>
+        </Row>
+
+        <Row className="align-items-center mt1">
+          <Col md={{ size: 10, offset: 2 }}>
+            <BotonDisabled title="social" />
+            <BotonDisabled title="moda"/>
+            <BotonDisabled title="periodistico"/>
+            <BotonDisabled title="branding"/>
+          </Col>
+        </Row>
+        <Row className="align-items-center">
+          <Col md={{ size: 10, offset: 2 }}>
+            <BotonDisabled title="artistico" />
+            <BotonDisabled title="comercial"/>
+            <BotonDisabled title="aereo"/>
+            <BotonDisabled title="nocturno"/>
+          </Col>
+        </Row>
+        <Row className="align-items-center">
+          <Col md={{ size: 10, offset: 2 }}>
+            <BotonDisabled title="documental" />
+            <BotonDisabled title="publicitario"/>
+            <BotonDisabled title="retrato"/>
+            <BotonDisabled title="redes sociales"/>
+          </Col>
+        </Row>
+      </Container>
+    </LayoutMain>
+  ))
+  
+  .add("Layout-18", () =>(
+    <LayoutMain>
+      <Container fluid>
+        <Row>
+          <Col className="text-center" md="12">
+            <h2 className="IntroText">¿Tienes alguna observación o referencia adicional?</h2>
+          </Col>
+          <Col md="12">
+            <h4 className="SecundaryText text-center">Deja un comentario o adjunta una foto a continuación</h4>
+          </Col>
+        </Row>
+        <Row className="btn-margin-2">
+        <Col md={{ size: 10, offset: 2 }}>
+          <Form>
+              <FormGroup>
+                <Row>
+                  <Col md="4">
+                      <Label className="mt-5 IntroText">LINK</Label>
+                      <Input></Input>
+                  </Col>
+                  <Col md={{size: 4, offset: 1}}>
+                      <Label className="mt-5 IntroText">LINK</Label>
+                      <Input ></Input>
+                  </Col>
+                  </Row>
+                  <Row>
+                  <Col md="4">
+                      <Label className="mt-3 IntroText">LINK</Label>
+                      <Input></Input>
+                  </Col>
+                  <Col md={{size: 4, offset: 1}}>
+                      <Label className="mt-3 IntroText">LINK</Label>
+                      <Input></Input>
+                  </Col>
+                  </Row>
+              </FormGroup>
+            </Form>
+          </Col>
+        </Row>
+        <div className="div-bottom">
+        <Row className="row-bottom-2">
+          <Col>
+            <h5 className="IntroText text-center">Saltar</h5>
+          </Col>
+        </Row>
+        </div>
+      </Container>
+    </LayoutMain>
+  ))
+
+  .add("Layout-19", () =>(
+    <LayoutMain>
+      <Container fluid>
+        <Row>
+          <Col className="text-center" md="12">
+            <h2 className="SecundaryText">¡Cuéntanos! ¿qué tipo de licor necesitas para tu evento?</h2>
+          </Col>
+          <Col md="12">
+            <h5 className="SecundaryText text-center">  Selecciona las categorias que desees </h5>
+          </Col>
+        </Row>
+
+        <Row className="align-items-center mt1">
+          <Col md={{ size: 6, offset: 4 }}>
+            <BotonDisabled title="Whisky" />
+            <BotonDisabled title="ginebra"/>
+          </Col>
+        </Row>
+        <Row className="align-items-center">
+          <Col md={{ size: 6, offset: 4 }}>
+            <BotonDisabled title="vodka" />
+            <BotonDisabled title="Champagne"/>
+          </Col>
+        </Row>
+        <Row className="align-items-center">
+          <Col md={{ size: 6, offset: 4 }}>
+            <BotonDisabled title="ron" />
+            <BotonDisabled title="espumantes"/>
+          </Col>
+        </Row>
+        <Row className="align-items-center">
+          <Col md={{ size: 6, offset: 4 }}>
+            <BotonDisabled title="tequila" />
+            <BotonDisabled title="vino"/>
+          </Col>
+        </Row>
+        <div className="div-bottom-2">
+        <Row className="row-bottom-2">
+          <Col>
+            <h5 className="IntroText text-center">¡Importante! todos los pedidos, con la excepción de las marcas nacionales, deben ser solicitados no mas de dos meses antes del evento.</h5>
+          </Col>
+        </Row>
+        </div>
+      </Container>
+    </LayoutMain>
+  ))
+
+  .add("Layout-20", () =>(
+    <LayoutMain>
+      <Container fluid>
+        <Row>
+          <Col className="text-center" md="12">
+            <h2 className="SecundaryText">A continuación te presentamos alguna de nuestras marcas disponibles</h2>
+          </Col>
+        </Row>
+        <Row className="align-items-center mt1">
+          <Col md={{size: 4, offset: 4}}>
+            <Selection/>
+          </Col>
+          <Col md={{size: 4, offset: 4}}>
+            <Selection/>
+          </Col>
+          <Col md={{size: 4, offset: 4}}>
+            <Selection/>
+          </Col>
+        </Row>
+      </Container>
+    </LayoutMain>
+  ))
+
+  .add("Layout-21", () =>(
+    <LayoutMain>
+      <Container fluid>
+        <Row>
+          <Col className="text-center" md="12">
+            <h3 className="SecundaryText">¿Qué tipo de cocteles estas buscando?</h3>
+          </Col>
+        </Row>
+        <Row className="btn-margin">
+          <Col md="12" className="text-center">
+            <BotonDisabled title="Simples"/>
+          </Col>
+          <Col md="12" className="text-center">
+            <BotonDisabled title="especiales"/>
+          </Col>
+          <Col md="12" className="text-center">
+            <BotonDisabled title="shots"/>
+          </Col>
+          <Col md="12" className="text-center">
+            <BotonDisabled title="teteros"/>
+          </Col>
+        </Row>
+      </Container>
+    </LayoutMain>
+  ))
+
+  .add("Layout-22", () =>(
+    <LayoutMain>
+      <Container fluid>
+      <Row className="align-items-center">
+          <Col className="text-center">
+            <h2 className="text-center SecundaryText">Selecciona el estilo de coctel que mas te gusta</h2>
+          </Col>
+        </Row>
+        <Row className="align-items-center mt1">
+          <Col md={{ size: 10, offset: 2 }}>
+            <BotonDisabled title="margarita" />
+            <BotonDisabled title="piña colada"/>
+            <BotonDisabled title="negroni"/>
+            <BotonDisabled title="bloody mary"/>
+          </Col>
+        </Row>
+        <Row className="align-items-center">
+          <Col md={{ size: 10, offset: 2 }}>
+            <BotonDisabled title="manhatan" />
+            <BotonDisabled title="daiquiri"/>
+            <BotonDisabled title="acapulco"/>
+            <BotonDisabled title="tom collins"/>
+          </Col>
+        </Row>
+        <Row className="align-items-center">
+          <Col md={{ size: 10, offset: 2 }}>
+            <BotonDisabled title="martini" />
+            <BotonDisabled title="mai tai"/>
+            <BotonDisabled title="mojito"/>
+            <BotonDisabled title="el presidente"/>
+          </Col>
+        </Row>
+        <Row className="align-items-center">
+          <Col md={{ size: 10, offset: 2 }}>
+            <BotonDisabled title="black russian" />
+            <BotonDisabled title="destornillador"/>
+            <BotonDisabled title="white lady"/>
+            <BotonDisabled title="himlet"/>
+          </Col>
+        </Row>
+      </Container>
+    </LayoutMain>
+  ))
 
 storiesOf("App", module).add("default", () => <App />);

@@ -6,8 +6,9 @@ import './selection.css';
 export default class Selection extends React.Component {
     render (){
         return (
-            <Form className="container-selection mt-5 ml-5">
+            <Form className="container-selection mt-2">
                 <FormGroup >
+                    <label className="label-style">OPCION</label>
                     <Input type="select" name="selection" className="selection" >
                         <option>-</option>
                         <option>Postres</option>

@@ -1,5 +1,5 @@
 .container-selection{
-    width: 30%;
+    width: 100%;
 }
 
 .selection{
@@ -17,3 +17,6 @@
     background: transparent !important;
 }
 
+.label-style{
+    color: white !important; 
+}
