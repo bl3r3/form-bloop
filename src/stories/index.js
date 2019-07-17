@@ -20,6 +20,7 @@ import Layout from '../components/Layout';
 import InicioComponentes from '../components/InicioComponents'
 import LayoutMain from '../components/LayoutMain';
 import LoadImg from '../components/LoadImg';
+import Slider from '../components/Slider';
 
 import './index.css'
 
@@ -35,6 +36,12 @@ storiesOf('Button', module)
         😀 😎 👍 💯
       </span>
     </Button>
+  ))
+
+  .add("slider", () => (
+    <div>
+      <Slider />
+    </div>
   ))
 
   .add("BotonDisabled", () => (
@@ -945,5 +952,9 @@ storiesOf('Button', module)
       </Container>
     </LayoutMain>
   ))
+
+
+
+  storiesOf("Clima", module).add("default", () => <App />);
 
 storiesOf("App", module).add("default", () => <App />);
