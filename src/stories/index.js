@@ -21,6 +21,8 @@ import InicioComponentes from '../components/InicioComponents'
 import LayoutMain from '../components/LayoutMain';
 import LoadImg from '../components/LoadImg';
 import Slider from '../components/Slider';
+import Navigations from '../components/Navbar';
+import Galeria from '../components/Gallery';
 
 import './index.css'
 
@@ -41,6 +43,19 @@ storiesOf('Button', module)
   .add("slider", () => (
     <div>
       <Slider />
+    </div>
+  ))
+
+  .add("nav", () => (
+
+    <div>
+      <Navigations/>
+    </div>
+  ))
+
+  .add("gallery", () => (
+    <div>
+      <Galeria/>
     </div>
   ))
 
