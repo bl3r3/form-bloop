@@ -3,24 +3,24 @@ import React from 'react';
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
 
+import PantallaInicial from '../../img/PantallaInicial1.png';
+import PantallaInicial2 from '../../img/PantallaInicial2.png';
+import PantallaInicial3 from '../../img/PantallaInicial3.png';
+
 import './index.css';
 
 const Slider = () => (
   <AwesomeSlider 
     fillParent
-    startup={false}
     bullets={false}
   >
-    <div data-src="/path/to/image-0.png">
-        <p className="parrafo">BRANDIND FOR</p>
-        <p className="parrafo">AMAZING PEOPLE</p>
+    <div data-src={PantallaInicial} className="img-slider">
     </div>
 
-    <div color="blue">2</div>
+    <div data-src={PantallaInicial2}></div>
 
-    <div color="orange">3</div>
+    <div data-src={PantallaInicial3}>3</div>
 
-    <div color="white">4</div>
   </AwesomeSlider>
 );
 
