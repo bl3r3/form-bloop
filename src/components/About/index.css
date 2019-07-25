@@ -1,0 +1,26 @@
+.img-about{
+    width: 450px;
+    height: 550px ;
+}
+
+.text-about{
+    font-size: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem; 
+}
+
+.parrafo-about{
+    font-size: 3rem;
+    line-height: 4rem;
+    text-align: justify;
+    justify-content: center;
+}
+
+.BTN-MORE{
+    float: left;
+    margin-top: 8rem;
+    background-color: grey;
+    border-radius: 0;
+    border-color: grey;
+    
+}

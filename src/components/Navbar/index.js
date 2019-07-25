@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  Container,
   Collapse,
   Navbar,
   NavbarToggler,
@@ -23,8 +24,12 @@ import {
 
           this.toggle = this.toggle.bind(this);
           this.state = {
-              isOpen: false
+            isOpen: false,
+            prevScrollpos: window.pageYOffset
           };
+
+          
+
       }
 
       toggle() {
@@ -35,7 +40,6 @@ import {
 
       render (){
           return (
-              <div>
                   <Navbar color="light" light expand="md" className="navbar">
                     <NavbarBrand href="/"> <img src={Logo} className="logo" /> </NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
@@ -62,7 +66,6 @@ import {
                         </Nav>
                     </Collapse>
                   </Navbar>
-              </div>
           )
       }
 
